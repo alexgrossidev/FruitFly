@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Model artifacts
+*.pt
+*.pth
+*.ckpt
+
+# connectorch's own dataset cache, if ever pointed inside the repo instead of ~/.cache
+.connectorch_cache/
+
+# Node / viewer (the viewer is a git submodule; its own build output should never be committed here)
+viewer/node_modules/
+viewer/dist/
+
+# OS noise
+.DS_Store
+
+# Large result artifacts you choose to regenerate rather than commit — keep small
+# metrics/replay JSON files, drop anything bulky here as the project grows.

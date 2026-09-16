@@ -1,0 +1,6 @@
+[submodule "vendor/connectorch"]
+	path = vendor/connectorch
+	url = https://github.com/us/connectorch.git
+[submodule "viewer"]
+	path = viewer
+	url = https://github.com/cobanov/fly-connectome-template.git
