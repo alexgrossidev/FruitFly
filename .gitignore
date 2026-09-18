@@ -23,3 +23,10 @@ viewer/dist/
 
 # Large result artifacts you choose to regenerate rather than commit — keep small
 # metrics/replay JSON files, drop anything bulky here as the project grows.
+
+# AI-assistant working files (local only)
+CLAUDE.md
+.claude/
+Claude outputs/
+config.bat
+node_modules

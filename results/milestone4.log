@@ -1,0 +1,90 @@
+model config: ModelConfig(num_input_nodes=16, num_output_nodes=16, leak=0.4, activation='tanh', initializer='normalized_synapse_count', bias=False, init_row_sum=1.0, settle_steps=2)
+train config: TrainConfig(epochs=30, batch_size=128, lr=0.01, train_size=16384, val_size=2048, test_size=4096, clip_grad_norm=0.0, data_seed_offset=1000)
+
+device: mps
+loaded in 48.1s: Connectome(
+    nodes=164,587,
+    edges=25,563,197,
+    directed=True,
+    source="male-cns:v1.0"
+)
+node columns: ('cell_type', 'cell_class', 'subclass', 'superclass', 'side', 'instance', 'status')
+superclass counts: ol_intrinsic=89384, cb_intrinsic=32160, vnc_intrinsic=13150, visual_projection=9200, vnc_sensory=6339, cb_sensory=4756, ol_sensory=4109, ascending_neuron=1846, descending_neuron=1314, vnc_motor=708, visual_centrifugal=563, sensory_ascending=533
+[real] compiled in 2.5s: ConnectomeRNN(
+  nodes=164,587, edges=25,563,197, weights='trainable', initializer='normalized_synapse_count', activation='tanh', leak=0.4, backend='scatter'
+  (weights): FreeWeights()
+  (propagator): ScatterPropagator()
+)
+[real] diagnostics: {'nodes': 164587, 'edges': 25563197, 'backend': 'scatter', 'weights': 'trainable', 'max_in_degree': 11526, 'max_out_degree': 11203, 'weight_mean': 0.00047895475290715694, 'weight_std': 0.00038592671626247466, 'weight_absmax': 0.02128804288804531, 'max_abs_row_sum': 1.0000001192092896, 'activation_bytes_per_batch_step': 204505576}
+[real] raw max_abs_row_sum 193.11 -> rescaled by 0.00518
+[real] activation GiB per training call, 12 steps: batch 1: 2.29, batch 2: 4.57, batch 4: 9.14, batch 8: 18.28, batch 16: 36.57
+[real] training batch 2 (4.57 GiB of activations)
+/Users/alex/Desktop/PERSONAL/FruitFly/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1794: UserWarning: this backward pass will hold about 4.6 GiB of per-edge activations (25,563,197 edges x batch 2 x 12 steps x 2 tensors).
+Reduce batch or steps, run inference under torch.no_grad(), or train in segments by passing the returned state into the next call.
+  return forward_call(*args, **kwargs)
+[real] step     1  loss 0.6745  6.87s/step  4 examples  7s
+[real] step    10  loss 0.6292  4.73s/step  40 examples  47s
+[real] step    20  loss 0.7733  4.74s/step  80 examples  95s
+[real] step    30  loss 0.7012  4.65s/step  120 examples  139s
+[real] step    40  loss 0.6105  4.60s/step  160 examples  184s
+[real] step    50  loss 0.7275  4.65s/step  200 examples  233s
+[real] step    60  loss 0.6860  4.60s/step  240 examples  276s
+[real] step    70  loss 0.5567  4.55s/step  280 examples  319s
+[real] step    80  loss 0.5856  4.54s/step  320 examples  363s
+[real] step    90  loss 0.5710  4.52s/step  360 examples  407s
+[real] step   100  loss 0.5430  4.51s/step  400 examples  451s
+[real] step   110  loss 0.7169  4.50s/step  440 examples  495s
+[real] step   120  loss 0.5823  4.51s/step  480 examples  541s
+[real] step   130  loss 0.6076  4.51s/step  520 examples  587s
+[real] step   140  loss 0.9133  4.51s/step  560 examples  632s
+[real] step   150  loss 0.6478  4.50s/step  600 examples  675s
+[real] step   160  loss 0.6454  4.50s/step  640 examples  720s
+[real] step   170  loss 0.5438  4.49s/step  680 examples  764s
+[real] step   180  loss 0.6987  4.49s/step  720 examples  808s
+[real] step   190  loss 0.5318  4.49s/step  760 examples  853s
+[real] step   200  loss 0.5884  4.46s/step  800 examples  892s
+[real] step   210  loss 0.4789  4.46s/step  840 examples  937s
+[real] step   220  loss 0.7288  4.46s/step  880 examples  981s
+[real] step   230  loss 0.5883  4.48s/step  920 examples  1031s
+[real] step   240  loss 0.4404  4.55s/step  960 examples  1091s
+[real] step   250  loss 0.7585  4.52s/step  1000 examples  1130s
+[real] step   260  loss 0.6200  4.53s/step  1040 examples  1177s
+[real] step   270  loss 0.6315  4.52s/step  1080 examples  1220s
+[real] step   280  loss 0.6999  4.51s/step  1120 examples  1262s
+[real] step   290  loss 0.7064  4.50s/step  1160 examples  1306s
+[real] step   300  loss 0.6057  4.51s/step  1200 examples  1354s
+[real] step   310  loss 0.6859  4.50s/step  1240 examples  1396s
+[real] step   320  loss 0.6694  4.48s/step  1280 examples  1434s
+[real] step   330  loss 0.7986  4.45s/step  1320 examples  1469s
+[real] step   340  loss 0.7215  4.43s/step  1360 examples  1505s
+[real] step   350  loss 0.6211  4.40s/step  1400 examples  1540s
+[real] step   360  loss 0.8001  4.39s/step  1440 examples  1581s
+[real] step   370  loss 0.6631  4.38s/step  1480 examples  1621s
+[real] step   380  loss 0.6942  4.38s/step  1520 examples  1664s
+[real] step   390  loss 0.4737  4.38s/step  1560 examples  1709s
+[real] step   400  loss 0.5181  4.38s/step  1600 examples  1752s
+[real] step   410  loss 0.5021  4.38s/step  1640 examples  1797s
+[real] step   420  loss 0.6929  4.40s/step  1680 examples  1847s
+[real] step   430  loss 0.5769  4.41s/step  1720 examples  1895s
+[real] step   440  loss 0.6811  4.41s/step  1760 examples  1940s
+[real] step   450  loss 0.6059  4.41s/step  1800 examples  1984s
+[real] step   460  loss 0.6071  4.44s/step  1840 examples  2042s
+[real] step   470  loss 0.5510  4.44s/step  1880 examples  2088s
+[real] step   480  loss 0.9455  4.45s/step  1920 examples  2135s
+[real] step   490  loss 0.6521  4.45s/step  1960 examples  2179s
+[real] step   500  loss 0.5150  4.45s/step  2000 examples  2223s
+[real] step   510  loss 0.6059  4.45s/step  2040 examples  2268s
+[real] step   520  loss 0.6888  4.45s/step  2080 examples  2311s
+[real] step   530  loss 0.5465  4.44s/step  2120 examples  2354s
+[real] step   540  loss 0.6764  4.45s/step  2160 examples  2404s
+[real] step   550  loss 0.7048  4.45s/step  2200 examples  2447s
+[real] step   560  loss 0.7086  4.45s/step  2240 examples  2493s
+[real] step   570  loss 0.6892  4.46s/step  2280 examples  2541s
+[real] step   580  loss 0.5005  4.46s/step  2320 examples  2586s
+[real] step   590  loss 0.5880  4.46s/step  2360 examples  2632s
+[real] step   600  loss 0.5876  4.45s/step  2400 examples  2673s
+[real] evaluating on 256 held-out lists ...
+[real] test:     has_six: acc 0.4766 f1 0.3679 bal 0.5505  has_seven: acc 0.6250 f1 0.7692 bal 0.5000  (99s)
+[real] baseline: has_six: acc 0.6211 f1 0.7663 bal 0.5000  has_seven: acc 0.6250 f1 0.7692 bal 0.5000
+[real] topology unchanged: True
+wrote /Users/alex/Desktop/PERSONAL/FruitFly/results/milestone4.json

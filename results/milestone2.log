@@ -1,0 +1,50 @@
+model config: ModelConfig(num_input_nodes=16, num_output_nodes=16, leak=0.4, activation='tanh', initializer='normalized_synapse_count', bias=False, init_row_sum=1.0, settle_steps=2)
+train config: TrainConfig(epochs=30, batch_size=128, lr=0.01, train_size=16384, val_size=2048, test_size=4096, clip_grad_norm=0.0, data_seed_offset=1000)
+
+[   real seed 0] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  0  52s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[   real seed 1] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  116s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[   real seed 2] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  123s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[   real seed 3] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  0  116s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[   real seed 4] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  0  114s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[   real seed 5] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  0  137s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[   real seed 6] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  0  108s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[   real seed 7] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  0  122s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[   real seed 8] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  0  132s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[   real seed 9] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  160s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[rewired seed 0] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  128s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[rewired seed 1] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  112s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[rewired seed 2] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  126s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[rewired seed 3] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  130s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[rewired seed 4] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  125s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[rewired seed 5] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  140s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[rewired seed 6] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  118s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[rewired seed 7] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  0  113s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[rewired seed 8] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  111s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[rewired seed 9] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  118s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[ random seed 0] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  110s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[ random seed 1] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  108s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[ random seed 2] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  114s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[ random seed 3] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  0  91s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[ random seed 4] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  57s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[ random seed 5] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  39s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[ random seed 6] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  39s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[ random seed 7] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  38s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[ random seed 8] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  1  38s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+[ random seed 9] edges 3630  params {'total': 3840, 'connectome': 3630, 'other': 210}  best epoch  0  38s  test has_six: acc 1.0000 f1 1.0000 bal 1.0000  has_seven: acc 1.0000 f1 1.0000 bal 1.0000
+
+=== Milestone 2: test-set mean ± std across seeds ===
+seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+real  (params {'total': 3840, 'connectome': 3630, 'other': 210}, edges 3630, edge overlap with real 1.000, epochs to 0.95 val bal-acc: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+    has_six: accuracy 1.0000±0.0000  f1 1.0000±0.0000  balanced_accuracy 1.0000±0.0000
+  has_seven: accuracy 1.0000±0.0000  f1 1.0000±0.0000  balanced_accuracy 1.0000±0.0000
+
+rewired  (params {'total': 3840, 'connectome': 3630, 'other': 210}, edges 3630, edge overlap with real 0.498, epochs to 0.95 val bal-acc: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+    has_six: accuracy 1.0000±0.0000  f1 1.0000±0.0000  balanced_accuracy 1.0000±0.0000
+  has_seven: accuracy 1.0000±0.0000  f1 1.0000±0.0000  balanced_accuracy 1.0000±0.0000
+
+random  (params {'total': 3840, 'connectome': 3630, 'other': 210}, edges 3630, edge overlap with real 0.362, epochs to 0.95 val bal-acc: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+    has_six: accuracy 1.0000±0.0000  f1 1.0000±0.0000  balanced_accuracy 1.0000±0.0000
+  has_seven: accuracy 1.0000±0.0000  f1 1.0000±0.0000  balanced_accuracy 1.0000±0.0000
+wrote /Users/alex/Desktop/PERSONAL/FruitFly/results/metrics.json
+python -m src.train --milestone 2 --seeds 10 --quiet  4374.94s user 915.79s system 53% cpu 2:44:06.92 total

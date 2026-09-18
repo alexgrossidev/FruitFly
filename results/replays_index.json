@@ -1,0 +1,178 @@
+{
+  "checkpoint": "/Users/alex/Desktop/PERSONAL/FruitFly/results/checkpoints/real_seed0.pt",
+  "condition": "real",
+  "seed": 0,
+  "normalization": "|h_t|: absolute value of each neuron's leaky-tanh state after recurrent step t. h_t is in [-1, 1] by construction (leak-weighted average of tanh outputs from a zero initial state), so this is a fixed rescale to [0, 1] with no per-run min-max; sign is discarded; 0 = rest. One frame per recurrent step, 1 s apart: the first 10 steps each present one digit of the list, any further frames are silent zero-drive settle steps (count in experiment.settle_steps).",
+  "seconds_per_digit": 1.0,
+  "input_body_ids": [
+    10082,
+    10155,
+    10185,
+    10241,
+    10297,
+    10307,
+    10353,
+    10375,
+    10404,
+    10583,
+    10609,
+    10659,
+    10719,
+    10799,
+    10847,
+    10867
+  ],
+  "readout_body_ids": [
+    17920,
+    18938,
+    21568,
+    22607,
+    513133,
+    514195,
+    514522,
+    520188,
+    522405,
+    523528,
+    523672,
+    524521,
+    530685,
+    531985,
+    533442,
+    374042364
+  ],
+  "num_neurons_exported": 100,
+  "files": {
+    "six_only": {
+      "path": "results/replays/real_seed0_six_only.json",
+      "index": 9,
+      "digits": [
+        1,
+        3,
+        4,
+        1,
+        1,
+        6,
+        1,
+        0,
+        8,
+        5
+      ],
+      "labels": {
+        "has_six": 1.0,
+        "has_seven": 0.0
+      },
+      "logits": {
+        "has_six": 6.343203067779541,
+        "has_seven": -3.1645967960357666
+      },
+      "probabilities": {
+        "has_six": 0.9982444047927856,
+        "has_seven": 0.04051996022462845
+      },
+      "predicted": {
+        "has_six": 1.0,
+        "has_seven": 0.0
+      },
+      "correct": true
+    },
+    "seven_only": {
+      "path": "results/replays/real_seed0_seven_only.json",
+      "index": 0,
+      "digits": [
+        7,
+        0,
+        8,
+        9,
+        0,
+        4,
+        3,
+        9,
+        2,
+        3
+      ],
+      "labels": {
+        "has_six": 0.0,
+        "has_seven": 1.0
+      },
+      "logits": {
+        "has_six": -2.5430784225463867,
+        "has_seven": 5.827914237976074
+      },
+      "probabilities": {
+        "has_six": 0.07289285957813263,
+        "has_seven": 0.9970644116401672
+      },
+      "predicted": {
+        "has_six": 0.0,
+        "has_seven": 1.0
+      },
+      "correct": true
+    },
+    "both": {
+      "path": "results/replays/real_seed0_both.json",
+      "index": 1,
+      "digits": [
+        9,
+        6,
+        7,
+        8,
+        0,
+        8,
+        4,
+        6,
+        7,
+        3
+      ],
+      "labels": {
+        "has_six": 1.0,
+        "has_seven": 1.0
+      },
+      "logits": {
+        "has_six": 7.611978054046631,
+        "has_seven": 7.074920654296875
+      },
+      "probabilities": {
+        "has_six": 0.9995057582855225,
+        "has_seven": 0.9991546869277954
+      },
+      "predicted": {
+        "has_six": 1.0,
+        "has_seven": 1.0
+      },
+      "correct": true
+    },
+    "neither": {
+      "path": "results/replays/real_seed0_neither.json",
+      "index": 3,
+      "digits": [
+        0,
+        1,
+        3,
+        2,
+        2,
+        9,
+        9,
+        9,
+        5,
+        2
+      ],
+      "labels": {
+        "has_six": 0.0,
+        "has_seven": 0.0
+      },
+      "logits": {
+        "has_six": -3.919187545776367,
+        "has_seven": -3.430248498916626
+      },
+      "probabilities": {
+        "has_six": 0.019470589235424995,
+        "has_seven": 0.03136338293552399
+      },
+      "predicted": {
+        "has_six": 0.0,
+        "has_seven": 0.0
+      },
+      "correct": true
+    }
+  }
+}
